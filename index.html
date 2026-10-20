@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ken Movers | House, Office and Full-Service Moving in Nairobi</title>
+<meta name="description" content="Ken Movers: house moving, packing, office moving and full-service relocation across Nairobi and Kenya. Get an instant estimate and book on WhatsApp.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800&family=Barlow:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="topbar">
+  <span>Mon to Sun, 7:00 AM to 7:00 PM</span>
+  <a href="tel:+254729757966">Call +254 729 757 966</a>
+</div>
+<header class="nav">
+  <a class="logo" href="#top" aria-label="Ken Movers home">
+    <svg viewBox="0 0 48 32" width="46" aria-hidden="true"><rect x="2" y="6" width="28" height="18" rx="2" fill="#D62828"/><path d="M30 12h9l7 7v5H30z" fill="#F77F00"/><circle cx="12" cy="26" r="4" fill="#14213D"/><circle cx="38" cy="26" r="4" fill="#14213D"/></svg>
+    <span>Ken<b>Movers</b><small>Your Move, Our Mission</small></span>
+  </a>
+  <nav id="menu">
+    <a href="#services">Services</a><a href="#estimate">Get an estimate</a><a href="#process">How it works</a><a href="#areas">Areas</a><a href="#faq">FAQ</a>
+  </nav>
+  <a class="btn sm" href="#estimate">Get a quote</a>
+  <button class="burger" id="burger" aria-label="Menu" aria-expanded="false">Menu</button>
+</header>
+
+<main id="top">
+  <section class="hero">
+    <div class="road" aria-hidden="true">
+      <svg class="truck" viewBox="0 0 120 64" width="150"><rect x="2" y="6" width="74" height="40" rx="4" fill="#fff"/><rect x="10" y="14" width="58" height="8" fill="#D62828"/><path d="M76 16h22l16 18v12H76z" fill="#F77F00"/><rect x="86" y="20" width="12" height="12" fill="#cfe3ff"/><circle cx="26" cy="50" r="9" fill="#14213D"/><circle cx="26" cy="50" r="3" fill="#fff"/><circle cx="96" cy="50" r="9" fill="#14213D"/><circle cx="96" cy="50" r="3" fill="#fff"/></svg>
+    </div>
+    <div class="hero-in">
+      <h1>Your move,<br>our mission.</h1>
+      <p>House moving, packing, office relocation and full-service moves across Nairobi and all of Kenya. Trained crews, protected furniture and a price you know before moving day.</p>
+      <div class="cta">
+        <a class="btn" href="#estimate">Get an instant estimate</a>
+        <a class="btn ghost" id="waHero" href="#">Chat on WhatsApp</a>
+      </div>
+      <ul class="chips"><li>Home and office moves</li><li>Packing included on request</li><li>Open 7 days a week</li></ul>
+    </div>
+  </section>
+
+  <section class="services" id="services">
+    <h2>Everything for the move, from one team</h2>
+    <div class="cards">
+      <article><span class="ico">🏠</span><h3>House moving</h3><p>Bedsitters to family homes. We load, drive, offload and place furniture where you want it.</p></article>
+      <article><span class="ico">📦</span><h3>Packing service</h3><p>Room-by-room packing with boxes, wrap and fragile-item care. Or pack yourself and we move the boxes.</p></article>
+      <article><span class="ico">🚚</span><h3>Full-service relocation</h3><p>Packing, dismantling, transport, reassembly and unpacking, handled as one job.</p></article>
+      <article><span class="ico">🏢</span><h3>Office moving</h3><p>Desks, files and equipment moved with minimal downtime. Evening and weekend slots available.</p></article>
+    </div>
+  </section>
+
+  <section class="estimate" id="estimate">
+    <div class="est-copy">
+      <h2>Get your estimate in 30 seconds</h2>
+      <p>Tell us about the move and see a price range straight away. Send it to us on WhatsApp and we will confirm the exact quote after a quick check of your inventory.</p>
+      <img class="poster" src="assets/poster.jpg" alt="Ken Movers services poster: house moving, packing service, full-service relocation, office moving" loading="lazy">
+    </div>
+    <form class="est-form" id="estForm" novalidate>
+      <label>Type of move
+        <select id="size">
+          <option value="studio">Bedsitter or studio</option>
+          <option value="1br">1 bedroom</option>
+          <option value="2br" selected>2 bedrooms</option>
+          <option value="3br">3 bedrooms</option>
+          <option value="4br">4+ bedrooms</option>
+          <option value="officeS">Small office</option>
+          <option value="officeL">Large office</option>
+        </select>
+      </label>
+      <label>Moving from
+        <input id="from" placeholder="e.g. Kilimani, Nairobi">
+      </label>
+      <label>Moving to
+        <input id="to" placeholder="e.g. Ruaka, Kiambu">
+      </label>
+      <label>Approximate distance: <output id="kmOut">15 km</output>
+        <input type="range" id="km" min="1" max="500" value="15">
+      </label>
+      <label>Floors without a lift (both addresses combined)
+        <input type="number" id="floors" min="0" max="20" value="0">
+      </label>
+      <label class="check"><input type="checkbox" id="pack"> Add packing service</label>
+      <label>Preferred date
+        <input type="date" id="date">
+      </label>
+      <label>Your name
+        <input id="name" autocomplete="name">
+      </label>
+      <div class="result" id="result" aria-live="polite"></div>
+      <a class="btn" id="send" href="#">Send this to Ken Movers on WhatsApp</a>
+    </form>
+  </section>
+
+  <section class="process" id="process">
+    <h2>How a move works with us</h2>
+    <ol>
+      <li><b>Tell us what you are moving</b><span>Use the estimate form or message us on WhatsApp.</span></li>
+      <li><b>Get a clear quote</b><span>We confirm price, date and crew size.</span></li>
+      <li><b>We pack and protect</b><span>Furniture wrapped, boxes labelled, fragile items padded.</span></li>
+      <li><b>We move and set up</b><span>Everything delivered to the right room.</span></li>
+    </ol>
+  </section>
+
+  <section class="areas" id="areas">
+    <h2>Moving across Nairobi and Kenya</h2>
+    <p>Westlands, Kilimani, Lavington, Karen, Kileleshwa, Kasarani, Ruaka, Syokimau, Rongai, Thika and long-distance moves to Mombasa, Kisumu, Nakuru, Eldoret and beyond.</p>
+  </section>
+
+  <section class="faq" id="faq">
+    <h2>Common questions</h2>
+    <details><summary>How is the final price decided?</summary><p>By the size of the move, the distance, access such as stairs or lifts, and whether you need packing. The estimate gives a range and we confirm it after seeing your inventory.</p></details>
+    <details><summary>Can you move on weekends?</summary><p>Yes. We work seven days a week from 7:00 AM to 7:00 PM.</p></details>
+    <details><summary>Do you move offices after hours?</summary><p>Yes. Tell us your building rules and we plan the move around them.</p></details>
+    <details><summary>Do you provide packing materials?</summary><p>Yes, when you add the packing service. We bring boxes, wrap and tape.</p></details>
+  </section>
+</main>
+
+<footer>
+  <p><b>Ken Movers</b> · Your Move, Our Mission</p>
+  <p><a href="tel:+254729757966">+254 729 757 966</a> · Nairobi, Kenya</p>
+  <p class="c">© <span id="yr"></span> Ken Movers. All rights reserved.</p>
+</footer>
+<a class="wa" id="waFloat" href="#" aria-label="Chat with Ken Movers on WhatsApp">Talk to us</a>
+<script src="script.js"></script>
+</body>
+</html>
